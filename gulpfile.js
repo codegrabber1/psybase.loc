@@ -5,6 +5,7 @@ const bs        = require('browser-sync').create();
 const wiredep   = require('wiredep').stream;
 const sass      = require('gulp-sass');
 const concat    = require('gulp-concat');
+const concatcss = require('gulp-concat-css');
 const cached    = require('gulp-cached');
 const multipipe = require('multipipe');
 const notify    = require('gulp-notify');
@@ -38,6 +39,7 @@ gulp.task('sass',function(){
             browsers: ['last 2 versions'],
             cascade: false
         }),
+        concatcss('style.css'),
         gulp.dest('frontend')
     ).on('error', notify.onError());
 });
@@ -59,4 +61,4 @@ gulp.task('watch', function(){
     gulp.watch('frontend/sass/*.sass',['sass']);
 });
 /*== default ==*/
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'server', 'bower']);
