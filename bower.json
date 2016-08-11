@@ -1,0 +1,26 @@
+{
+  "name": "psybase",
+  "version": "0.1.0",
+  "dependencies": {
+    "normalize-css": "^4.2.0"
+  },
+  "homepage": "https://github.com/codegrabber1/psybase",
+  "authors": [
+    "codegrabber1 <poruchenko@ukr.net>"
+  ],
+  "description": "packages for psybase",
+  "main": "",
+  "keywords": [
+    "psybase",
+    "psychologists"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "frontend/bower_components",
+    "test",
+    "tests"
+  ]
+}
