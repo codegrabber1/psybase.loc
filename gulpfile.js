@@ -4,6 +4,7 @@ const gulp      = require('gulp');
 const bs        = require('browser-sync').create();
 const wiredep   = require('wiredep').stream;
 const sass      = require('gulp-sass');
+const pug       = require('gulp-pug');
 const concat    = require('gulp-concat');
 const concatcss = require('gulp-concat-css');
 const cached    = require('gulp-cached');
@@ -29,6 +30,18 @@ gulp.task('server', function () {
   bs.watch('frontend/**/*.*').on('change', bs.reload);
 });
 
+/*== pug ==*/
+gulp.task('pug', function buildHTML(){
+  return multipipe(
+    gulp.src('frontend/*.pug'),
+    pug({
+      'pretty': true,
+      'compileDebug': true
+    }),
+    gulp.dest('frontend/')
+  ).on('error', notify.onError());
+});
+
 /*== sass ==*/
 gulp.task('sass',function(){
     return multipipe(
@@ -48,7 +61,10 @@ gulp.task('sass',function(){
 gulp.task('scripts', function(){
     return multipipe(
         gulp.src([
-            'frontend/'
+            'frontend/libs/jq.mmnu/js/jquery.mmenu.all.min.js',
+            'frontend/libs/superfish/dist/js/superfish.js',
+            'frontend/libs/simplyscroll/jquery.simplyscroll.min.js',
+            'frontend/libs/flexslider/jquery.flexslider-min.js'
         ]),
         cached('scripts'),
         concat('all.js'),
@@ -59,6 +75,7 @@ gulp.task('scripts', function(){
 /*== watch ==*/
 gulp.task('watch', function(){
     gulp.watch('frontend/sass/*.sass',['sass']);
+    gulp.watch('frontend/**/*.pug', ['pug']);
 });
 /*== default ==*/
 gulp.task('default', ['watch', 'server', 'bower']);

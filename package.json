@@ -28,6 +28,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.3.0",
     "gulp-notify": "^2.2.0",
+    "gulp-pug": "^3.0.4",
     "gulp-sass": "^2.3.2",
     "multipipe": "^0.3.1",
     "wiredep": "^4.0.0"

@@ -1,2 +1,114 @@
+//== mixins ==//
+@import "mixins"
+
+//colors
+$blue_col: #0056ba
+$bluehv_col: #2B81F0
+$yell_col: #ffd200
+$yellhv_col: #FFEC90
+$font_menu: #333
+$active_link: #f03c3c
+$font_col: #2f2f2f
+$border_col: #ececec
+$foot_bg: #333
+$inver_col: #fff
+//== main settings ==//
 body
-    background-color: #fff
+  background-color: #fff
+h2.s1,
+h2.s2
+  a
+    text-decoration: none
+    color: $font_col
+h2.s1
+  float: left
+h2.s2
+  float: right
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+img
+  display: block
+  max-width: 100%
+  height: auto
+*:focus
+  outline: none
+.b_breadcrumbs
+  width: 100%
+  border: 1px solid red
+  .breadcrumb-title
+    float: left
+  .ticker-breadcrumbs
+    float: right
+    li
+      display: inline-block
+input,
+textarea
+  border: none
+  margin: 0
+  padding: 10px
+  background-color: #fff
+.s_content
+  h2
+    text-align: center
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  textarea
+    border-bottom: 1px solid $yell_col
+    width: 100%
+    display: block
+    &:focus
+      border-bottom: 1px solid $blue_col
+  input[type="submit"]
+    text-align: center
+    display: block
+    width: 100%
+    margin: 10px 0
+    font-weight: bold
+    color: $blue_col
+    text-transform: uppercase
+    background-color: $yell_col
+    &:hover
+      color: $bluehv_col
+      background-color: $yellhv_col
+      @include transition(all .3s ease-in-out)
+  .checkboxFive
+    width: 25px
+    margin: 20px 10px
+    position: relative
+    label
+      cursor: pointer
+      position: absolute
+      width: 20px
+      height: 20px
+      top: 0
+      left: 0
+      background-color: #FFF
+      border: 1px solid #ddd
+      //box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7) inset
+      &:after
+        opacity: 0
+        content: ""
+        position: absolute
+        width: 20px
+        height: 10px
+        background-color: transparent
+        top: 0
+        left: 3px
+        border: 3px solid $blue_col
+        border-top: none
+        border-right: none
+        @include transform(rotate(-45deg))
+      &:hover:after
+        opacity: .5
+    input[type="checkbox"]
+      &:checked+label:after
+        opacity: 1
+    .remember
+      position: absolute
+      top: 0
+      left: 30px
+      width: 150px
+      //margin: 20px 0
