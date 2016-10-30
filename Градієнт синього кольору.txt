@@ -1,0 +1,7 @@
+Градієнт синього кольору
+0099FF
+0066CC
+
+background: #FAF9F5;
+/*==slider_menu==*/
+http://dbmast.ru/adaptivnye-modalnye-formy-vhoda-i-registracii

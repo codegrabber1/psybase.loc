@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"tr",
+				"trf	transform"
+			],
+			[
 				"on",
 				"onError"
 			],
@@ -20,18 +24,34 @@
 	"buffers":
 	[
 		{
-			"file": "frontend/index.html",
+			"file": "frontend/includes/_menu.pug",
 			"settings":
 			{
-				"buffer_size": 17263,
+				"buffer_size": 198,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "frontend/js/common.js",
+			"file": "frontend/includes/_mixins.pug",
 			"settings":
 			{
-				"buffer_size": 296,
+				"buffer_size": 827,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "frontend/includes/_header.pug",
+			"settings":
+			{
+				"buffer_size": 263,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "frontend/includes/_head.pug",
+			"settings":
+			{
+				"buffer_size": 16172,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,23 +59,23 @@
 			"file": "frontend/sass/main.sass",
 			"settings":
 			{
-				"buffer_size": 155,
+				"buffer_size": 358,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "gulpfile.js",
+			"file": "frontend/sass/includes/_header.sass",
 			"settings":
 			{
-				"buffer_size": 2001,
+				"buffer_size": 882,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "package.json",
+			"file": "frontend/index.html",
 			"settings":
 			{
-				"buffer_size": 895,
+				"buffer_size": 4819,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,12 +83,12 @@
 			"file": "frontend/sass/_settings.sass",
 			"settings":
 			{
-				"buffer_size": 2202,
+				"buffer_size": 2237,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
 	"command_palette":
 	{
 		"height": 375.0,
@@ -79,8 +99,20 @@
 				"Package Control: Install Package"
 			],
 			[
+				"lp",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ter",
+				"Terminal: Open in project folder"
+			],
+			[
 				"",
-				"Bookmarks: Select Previous"
+				"Autoprefix CSS"
 			],
 			[
 				"IP",
@@ -91,7 +123,7 @@
 				"Git: Init"
 			]
 		],
-		"width": 480.0
+		"width": 390.0
 	},
 	"console":
 	{
@@ -114,26 +146,52 @@
 	[
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/styles"
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes"
 	],
 	"file_history":
 	[
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_topmenu.sass",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/main.sass",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/gulpfile.js",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_footer.pug",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js/common.js",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_mixins.pug",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_header.pug",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_media.sass",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/bower.json",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/index.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_footer.sass",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/package.json",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_head.pug",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/index.pug",
+		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/SideBarGit/SideBarGit.sublime-settings",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_header.sass",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/contact.pug",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_aside.sass",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/contact.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/libs/bootstrap/bootstrap.min.css",
+		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/User/Autoprefixer.sublime-settings",
+		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_sidebar.pug",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_settings.sass",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/index.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/layout.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_footer.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_header.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_sidebar.html",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_head.html",
+		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/layout.pug",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_pagination.sass",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_aside.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/bower.json",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/style.css",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/main.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js/common.js",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/index.html",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/.bowerrc",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/inde.html",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/.gitignore",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/package.json",
-		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/bower.json",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/header.sass",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/settings.sass",
@@ -149,12 +207,11 @@
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/libr.html",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/styles/style.css",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/node_modules/wiredep/node_modules/lodash/isPlainObject.js",
-		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/E/YandexDisk/YandexDisk/Server/domains/newsrepo.loc/gulpfile.js"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -168,6 +225,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ticker-section",
+			"tabs_size",
 			"body",
 			"html,body",
 			"html,\nbody",
@@ -194,186 +253,332 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "frontend/index.html",
+					"file": "frontend/includes/_menu.pug",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17263,
+						"buffer_size": 198,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16911,
-								16911
+								15,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 5796.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "frontend/js/common.js",
+					"file": "frontend/includes/_mixins.pug",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 296,
+						"buffer_size": 827,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								807,
+								807
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "frontend/sass/main.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 155,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								117,
-								117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2001,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								989,
-								989
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 504.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								790,
-								798
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 342.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "frontend/sass/_settings.sass",
+					"buffer": 2,
+					"file": "frontend/includes/_header.pug",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2202,
+						"buffer_size": 263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2202,
-								2202
+								15,
+								15
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 344.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "frontend/includes/_head.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16059,
+								16059
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3249.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "frontend/sass/main.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "frontend/sass/includes/_header.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "frontend/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1007.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "frontend/sass/_settings.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								253
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -381,7 +586,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -398,25 +603,29 @@
 				1
 			],
 			[
-				1,
 				0,
-				2,
-				1
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.560855218127,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
 	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -424,7 +633,7 @@
 	"project": "psybase.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -463,7 +672,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 243.0,
+	"side_bar_width": 287.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

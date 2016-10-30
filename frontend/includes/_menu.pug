@@ -1,0 +1,9 @@
+include _mixins
+nav
+  .container-fluid
+    .row
+      .col-xs-12
+        .mobile-mnu.hidden-sm.hidden-md.hidden-lg
+          a(href="#").toggle-mnu.hidden-lg
+            span
+        +menu(menuItem)

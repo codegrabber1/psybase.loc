@@ -32,5 +32,8 @@
     "gulp-sass": "^2.3.2",
     "multipipe": "^0.3.1",
     "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^2.3.2"
   }
 }

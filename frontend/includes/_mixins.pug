@@ -1,0 +1,46 @@
+//menu
+-var menuItem = ["Бібліотека", "Psychological centers", "Practice Psychologist", "Blog"]
+-var menuSubItem = ["Item1", "Item2", "Item3"]
+-var menuSubItem2 = ["Item1", "Item2", "Item3"]
+mixin menu(items)
+  ul.sf-menu
+    each item in menuItem
+      if item == menuItem[2]
+        li: a(href="#") #{item}
+          ul
+            each item in menuSubItem
+              li: a(href="#") #{item}
+      else if item == menuItem[3]
+        li: a(href="#") #{item}
+          ul
+            each item in menuSubItem
+              li: a(href="#") #{item}
+      else
+        li: a(href="#") #{item}
+// register block
+mixin top_menu()
+  ul
+    li
+      a(href="#")
+        i(class="fa fa-home" aria-hidden="true")
+        |Головна
+    li
+      a(href="#")
+        i(class="fa fa-envelope" aria-hidden="true")
+        |Contacts
+    li
+      a(href="#")
+        i(class="fa fa-skype" aria-hidden="true")
+        |Psybase
+// register block
+mixin regist_user()
+  ul
+    li
+      a(href="#" class="signin")
+       i(class="fa fa-user" aria-hidden="true")
+       |Sign In
+    li
+      a(href="#" class="signup")
+        i(class="fa fa-users" aria-hidden="true")
+        |Register your center
+// card info

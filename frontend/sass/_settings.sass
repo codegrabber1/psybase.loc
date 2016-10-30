@@ -1,7 +1,10 @@
 //== mixins ==//
-@import "mixins"
-
+@import "includes/mixins"
+*
+  margin: 0
+  padding: 0
 //colors
+$bg_col: #FAF9F5
 $blue_col: #0056ba
 $bluehv_col: #2B81F0
 $yell_col: #ffd200
@@ -14,7 +17,15 @@ $foot_bg: #333
 $inver_col: #fff
 //== main settings ==//
 body
-  background-color: #fff
+  background-color: $bg_col
+  font-family: 'Open Sans', sans-serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: 'MyriadProCondR', sans-serif
 h2.s1,
 h2.s2
   a

@@ -15,7 +15,7 @@ const autopref  = require('gulp-autoprefixer');
 
 // bower
 gulp.task('bower', function() {
-  return gulp.src('frontend/*.html')
+  return gulp.src('frontend/**/*.pug')
       .pipe(wiredep({
         directory : "frontend/bower_components"
       }))
@@ -46,7 +46,7 @@ gulp.task('pug', function buildHTML(){
 gulp.task('sass',function(){
     return multipipe(
         gulp.src('frontend/sass/main.sass'),
-        cached('sass'),
+        //cached('sass'),
         sass().on('error', sass.logError),
         autopref({
             browsers: ['last 2 versions'],
@@ -66,7 +66,7 @@ gulp.task('scripts', function(){
             'frontend/libs/simplyscroll/jquery.simplyscroll.min.js',
             'frontend/libs/flexslider/jquery.flexslider-min.js'
         ]),
-        cached('scripts'),
+        //cached('scripts'),
         concat('all.js'),
         gulp.dest('frontend/js')
     );
@@ -74,8 +74,9 @@ gulp.task('scripts', function(){
 
 /*== watch ==*/
 gulp.task('watch', function(){
-    gulp.watch('frontend/sass/*.sass',['sass']);
+    gulp.watch('frontend/sass/**/*.sass',['sass']);
+    gulp.watch('frontend/js/*.js',['scripts']);
     gulp.watch('frontend/**/*.pug', ['pug']);
 });
 /*== default ==*/
-gulp.task('default', ['watch', 'server', 'bower']);
+gulp.task('default', ['watch', 'server']);
