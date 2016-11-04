@@ -35,7 +35,7 @@
 			"file": "frontend/includes/_mixins.pug",
 			"settings":
 			{
-				"buffer_size": 827,
+				"buffer_size": 1192,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "frontend/includes/_header.pug",
 			"settings":
 			{
-				"buffer_size": 263,
+				"buffer_size": 566,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "frontend/includes/_head.pug",
 			"settings":
 			{
-				"buffer_size": 16172,
+				"buffer_size": 840,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "frontend/sass/main.sass",
 			"settings":
 			{
-				"buffer_size": 358,
+				"buffer_size": 384,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +67,7 @@
 			"file": "frontend/sass/includes/_header.sass",
 			"settings":
 			{
-				"buffer_size": 882,
+				"buffer_size": 1227,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +75,7 @@
 			"file": "frontend/index.html",
 			"settings":
 			{
-				"buffer_size": 4819,
+				"buffer_size": 5447,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "frontend/sass/_settings.sass",
 			"settings":
 			{
-				"buffer_size": 2237,
+				"buffer_size": 2363,
 				"line_ending": "Windows"
 			}
 		}
@@ -146,8 +146,7 @@
 	[
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc",
 		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes"
+		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes"
 	],
 	"file_history":
 	[
@@ -303,15 +302,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 827,
+						"buffer_size": 1192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								807,
-								807
+								0,
+								0
 							]
 						],
 						"settings":
@@ -344,15 +343,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 263,
+						"buffer_size": 566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								0,
+								0
 							]
 						],
 						"settings":
@@ -385,15 +384,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16172,
+						"buffer_size": 840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16059,
-								16059
+								0,
+								0
 							]
 						],
 						"settings":
@@ -414,7 +413,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3249.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -426,15 +425,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 358,
+						"buffer_size": 384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								173,
-								173
+								0,
+								0
 							]
 						],
 						"settings":
@@ -472,15 +471,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 882,
+						"buffer_size": 1227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								0,
+								0
 							]
 						],
 						"settings":
@@ -514,7 +513,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4819,
+						"buffer_size": 5447,
 						"regions":
 						{
 						},
@@ -556,15 +555,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2237,
+						"buffer_size": 2363,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								263,
-								253
+								0,
+								0
 							]
 						],
 						"settings":

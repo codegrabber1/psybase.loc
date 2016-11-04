@@ -53,7 +53,62 @@ header
       color: $bluehv_col
       font-weight: 200
   .top_banner
+    overflow: hidden
+    max-height: 80px
     margin: 1.67em 0
-    img
-      display: block
-      margin: 0 auto
+    background-image: url("images/banner.jpg")
+    background-size: cover
+    background-position: center
+    .topban_slide
+      img
+        display: block
+        margin: 0 auto
+  .top_banner figure
+    width: 500%
+    position: relative
+    margin: 0
+    left: 0
+    animation: 60s slidy infinite
+  .top_banner figure div
+    float: left
+    width: 20%
+  .top_banner figure img
+    float: left
+    max-width: 100%
+
+@keyframes slidy
+  0%
+    left: 0%
+  10%
+    left: 0%
+  12%
+    left: -100%
+  22%
+    left: -100%
+  24%
+    left: -200%
+  34%
+    left: -200%
+  36%
+    left: -300%
+  46%
+    left: -300%
+  48%
+    left: -400%
+  58%
+    left: -400%
+  60%
+    left: -300%
+  70%
+    left: -300%
+  72%
+    left: -200%
+  82%
+    left: -200%
+  84%
+    left: -100%
+  94%
+    left: -100%
+  96%
+    left: 0%
+

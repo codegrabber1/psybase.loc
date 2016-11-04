@@ -1637,9 +1637,22 @@ hr {
   padding: 0;
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: #FAF9F5;
   font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -1887,12 +1900,105 @@ header .logo span {
 }
 
 header .top_banner {
+  overflow: hidden;
+  max-height: 80px;
   margin: 1.67em 0;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-header .top_banner img {
+header .top_banner .topban_slide img {
   display: block;
   margin: 0 auto;
+}
+
+header .top_banner figure {
+  width: 500%;
+  position: relative;
+  margin: 0;
+  left: 0;
+  animation: 60s slidy infinite;
+}
+
+header .top_banner figure div {
+  float: left;
+  width: 20%;
+}
+
+header .top_banner figure img {
+  float: left;
+  max-width: 100%;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+
+  10% {
+    left: 0%;
+  }
+
+  12% {
+    left: -100%;
+  }
+
+  22% {
+    left: -100%;
+  }
+
+  24% {
+    left: -200%;
+  }
+
+  34% {
+    left: -200%;
+  }
+
+  36% {
+    left: -300%;
+  }
+
+  46% {
+    left: -300%;
+  }
+
+  48% {
+    left: -400%;
+  }
+
+  58% {
+    left: -400%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  70% {
+    left: -300%;
+  }
+
+  72% {
+    left: -200%;
+  }
+
+  82% {
+    left: -200%;
+  }
+
+  84% {
+    left: -100%;
+  }
+
+  94% {
+    left: -100%;
+  }
+
+  96% {
+    left: 0%;
+  }
 }
 
 nav {
@@ -2180,10 +2286,33 @@ nav li a:hover {
 footer {
   background-color: #333;
   color: #fff;
+  padding: 30px 0;
 }
 
-footer .b_footer {
+footer .b_footer_widget {
   border: 1px solid red;
+}
+
+footer .b_footer_widget h2 span {
+  display: block;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+footer .b_footer_widget p {
+  margin: 10px 0;
+}
+
+footer .b_footer_widget p i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+footer .b_footer_widget h2,
+footer .b_footer_widget .fw_title {
+  border-bottom: 2px solid #FF0000;
+  font-size: 23px;
 }
 
 /*==========  Desktop First Method  ==========*/
