@@ -64,7 +64,8 @@ gulp.task('scripts', function(){
             'frontend/libs/jq.mmnu/js/jquery.mmenu.all.min.js',
             'frontend/libs/superfish/dist/js/superfish.js',
             'frontend/libs/simplyscroll/jquery.simplyscroll.min.js',
-            'frontend/libs/flexslider/jquery.flexslider-min.js'
+            'frontend/libs/flexslider/jquery.flexslider-min.js',
+            'frontend/libs/semantic/public/semantic.min.js'
         ]),
         //cached('scripts'),
         concat('all.js'),

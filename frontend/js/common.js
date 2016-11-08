@@ -33,4 +33,37 @@ jQuery(document).ready(function($){
    $(".main-mnu").slideToggle();
         return false;
    });// end top menu
+$('.signin').on('click', function(){
+    $('.ui.modal')
+        .modal({
+            onApprove: function(){
+
+            },
+            //allowMultiple: true,
+            blurring: true
+        })
+        .modal('show');
+});
+$('.ui.checkbox').checkbox();
+$(".ui.form").form({
+  on:'blur',
+  inline : true,
+  fields:{
+    name:{
+     identifier:"name",
+     rules:[{
+        type:"empty",
+        prompt:'Please enter a value'
+     }]
+    },
+    pass:{
+     identifier:"pass",
+     rules:[{
+      type:"empty",
+      prompt:'Please enter a value'
+      }]
+    }
+  }
+    });
+$(".ui.dropdown").dropdown();
 });// end ready

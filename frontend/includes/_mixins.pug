@@ -17,6 +17,26 @@ mixin menu(items)
               li: a(href="#") #{item}
       else
         li: a(href="#") #{item}
+// lang
+mixin lang
+    .ui.floating.dropdown.labeled.icon
+        i(class="fa fa-language", aria-hidden="true")
+        span.text
+            | Select Language
+        .menu
+            .item
+                | English
+            .item
+                | French
+            .item
+                | German
+            .item
+                | Hungarian
+            .item
+                | Polish
+            .item
+                | Ukraine
+
 // register block
 mixin top_menu()
   ul
@@ -29,9 +49,7 @@ mixin top_menu()
         i(class="fa fa-envelope" aria-hidden="true")
         |Contacts
     li
-      a(href="#")
-        i(class="fa fa-skype" aria-hidden="true")
-        |Psybase
+      +lang
 // register block
 mixin regist_user()
   ul
@@ -39,8 +57,61 @@ mixin regist_user()
       a(href="#" class="signin")
        i(class="fa fa-user" aria-hidden="true")
        |Sign In
+      .ui.small.modal
+          i(class="close inverted icon")
+          .header
+              | Wellcome, Guest!
+          .content
+              form(method="post" class="ui form")
+                .field
+                  .ui.left.icon.input
+                    input(type="text" name="name" placeholder="Your name")
+                    i(class="user icon")
+                .field
+                  .ui.left.icon.input
+                    input(type="password" name="pass" placeholder="Your pass")
+                    i(class="lock icon")
+                .inline.field.error
+                .ui.toggle.checkbox
+                  input(tabindex="0" class="hidden" type="checkbox")
+                  label
+                    | Remember me
+              .ui.horizontal.divider
+                  | Enter via social
+              .ui.facebook.button
+                  i(class="facebook icon")
+                  | facebook
+              .ui.twitter.button
+                  i(class="twitter icon")
+                  | twitter
+              .ui.google.plus.button
+                  i(class="google plus icon")
+                  | google plus
+              .ui.linkedin.button
+                  i(class="linkedin icon")
+                  | linkedin
+          .actions
+              .ui.cancel.button.
+                  Cancel
+              input(type="submit" class="ui primary submit button" value="Sign In")
+
     li
       a(href="#" class="signup")
         i(class="fa fa-users" aria-hidden="true")
         |Register your center
 // card info
+mixin res_post(text,span)
+    li
+        a(href="#")
+            img(src="", alt="")
+        a(href="#")
+            | #{text}
+            span.
+                #{span}
+// carousel
+mixin carouselPanel(name, imgUrl)
+    .panel
+        .image
+            img(src="#{imgUrl}")
+        h2= name
+

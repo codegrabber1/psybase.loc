@@ -1,32 +1,94 @@
 footer
-  .container-fluid
-    .row
-      .col-md-3.col-sm-6.col-xs-12
-        .b_footer_widget
-          h2
-            |Psybase
-            span.
-              Psychologist centers of the world
-          p.
-            Description about the servise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-          p
-            i(class="fa fa-envelope" aria-hidden="true")
-            |psybase@gmail.com
+  .widget_footer
+    .container-fluid
+      .row
+        .col-md-3.col-sm-6.col-xs-12
+          .b_footer_widget.clearfix
+            h2
+              |Psybase
+              span.
+                Psychologist centers of the world
+            p.
+              Description about the servise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+            p.f_email
+              i(class="fa fa-envelope" aria-hidden="true")
+              |psybase@gmail.com
 
-      .col-md-3.col-sm-6.col-xs-12
-        .b_footer_widget
-          h2.fw_title
-            i(class="fa fa-tags" aria-hidden="true")
-            |Tags
-          ul
-            li: a(href="#") footer
-            li: a(href="#") footer
-            li: a(href="#") footer
-      .col-md-3.col-sm-6.col-xs-12
-        .b_footer_widget
-          h2.fw_title.
-            footer
-      .col-md-3.col-sm-6.col-xs-12
-        .b_footer_widget
-          h2.fw_title.
-            Follow Us
+        .col-md-3.col-sm-6.col-xs-12
+          .b_footer_widget.clearfix
+            h2.fw_title
+              i(class="fa fa-tags" aria-hidden="true")
+              |Tags
+            ul.tags
+              li: a(href="#") footer
+              li: a(href="#") footer
+              li: a(href="#") footerfooterfooter
+              li: a(href="#") footer
+              li: a(href="#") footerfooter
+              li: a(href="#") footer
+              li: a(href="#") footer
+        .col-md-3.col-sm-6.col-xs-12
+          .b_footer_widget.clearfix
+            h2.fw_title.
+              Resent posts
+            ul(class="f_blog")
+                +res_post("Description about the servise Lorem ipsum dolor sit amet...","3 minutes ago")
+                +res_post("Description about the servise Lorem ipsum dolor sit amet...","3 minutes ago")
+                +res_post("Description about the servise Lorem ipsum dolor sit amet...","10 minutes ago")
+        .col-md-3.col-sm-6.col-xs-12
+          .b_footer_widget.clearfix
+            h2.fw_title.
+              Follow Us
+            ul.f_soc.clearfix
+              li
+               p.face
+                 i(class="fa fa-facebook" aria-hidden="true")
+               p.count
+                 |1235
+                 span.
+                  Followers
+              li
+                p.rss
+                  i(class="fa fa-rss" aria-hidden="true")
+                p.count
+                  | 1235
+                  span.
+                    Followers
+              li
+                p.tw
+                  i(class="fa fa-twitter" aria-hidden="true")
+                p.count
+                  | 1235
+                  span.
+                    Followers
+              li
+                p.lI
+                  i(class="fa fa-linkedin" aria-hidden="true")
+                p.count
+                  | 1235
+                  span.
+                    Followers
+              li
+                p.ggl
+                  i(class="fa fa-google-plus" aria-hidden="true")
+                p.count
+                  | 1235
+                  span.
+                    Followers
+              li
+                p.yt
+                  i(class="fa fa-youtube" aria-hidden="true")
+                p.count
+                  | 1235
+                  span.
+                    Followers
+
+  .copyfooter
+    .container-fluid
+      .row
+        .col-xs-10
+          p &copy; 2016 Psybase All right reserved
+        .col-xs-2
+          a(href="#")
+            i(class="fa fa-angle-double-up" aria-hidden="true")
+

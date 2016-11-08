@@ -1,20 +1,124 @@
 footer
-  background-color: $foot_bg
-  color: $inver_col
-  padding: 30px 0
-  .b_footer_widget
-    border: 1px solid red
-    h2 span
-      display: block
-      font-size: 12px
-      font-family: 'Roboto', sans-serif
-      font-weight: 400
-    p
-      margin: 10px 0
+  .widget_footer
+    color: $inver_col
+    padding: 30px 0
+    border-bottom: 1px solid #18181a
+    background-color: $foot_bg
+    .b_footer_widget
+      //border-bottom: 1px solid #18181a
+      h2 span
+        display: block
+        font-size: 12px
+        font-family: 'Roboto', sans-serif
+        font-weight: 400
+      p
+        margin: 10px 10px 0
+        //line-height: 23px
+        padding: 0 25px 0 0
+        i
+          margin-right: 5px
+          font-size: 18px
+      .f_email
+        margin: 20px 0
+      h2.fw_title
+        border-bottom: 2px solid $f_bb
+        font-size: 23px
+        padding-bottom: 8px
+      li
+        float: left
+        display: block
+        border: 1px solid $border_col
+        margin: 10px 4px 0 0
+        a
+          display: block
+          color: $inver_col
+          padding: 6px
+          background-color: $font_col
+          &:hover
+            text-decoration: none
+            background-color: $font_menu
+    ul.f_soc
+      width: 100%
+      li
+        border: none
+        float: left
+        margin: 0
+        p.face,
+        p.tw,
+        p.lI,
+        p.rss,
+        p.ggl,
+        p.yt
+          float: left
+          width: 40px
+          height: 40px
+          border-radius: 100%
+          background-color: #f60
+          text-align: center
+          display: table
+          padding: 3px 0
+          i
+            display: table-cell
+            vertical-align: middle
+        p.face
+          background-color: $facebook
+        p.tw
+          background: $twitter
+        p.lI
+          background: $linkedIn
+        p.rss
+          background: $rss
+        p.ggl
+          background: $google
+        p.yt
+          background: $youtube
+        p.count
+          float: right
+          margin-left: 10px
+          font-size: 12px
+          font-weight: bold
+          color: #000000
+          span
+            font-weight: normal
+            color: #ccc
+            display: block
+    ul.f_blog
+      li
+        margin-bottom: 3px
+        overflow: hidden
+        border: none
+        width: 100%
+        background: none
+        a
+          display: block
+          font-size: 14px
+          line-height: 20px
+          padding: 0
+          background: none
+          color: $f_color
+          &:hover
+            text-decoration: none
+            color: $inver_col
+          img
+            width: 70px
+            height: 70px
+            float: left
+            margin-right: 20px
+            background-color: #ccc
+          span
+            display: block
+            font-size: 12px
+            margin: 10px 0 0 0
+  .copyfooter
+    border-top: 1px solid #242428
+    background-color: #1d1e20
+    width: 100%
+    //padding: 10px 0
+    a
+      color: #ffffff
+      float: right
+      &:hover
+        text-decoration: none
       i
-        margin-right: 5px
-        font-size: 18px
-    h2,
-    .fw_title
-      border-bottom: 2px solid $f_bb
-      font-size: 23px
+        margin-left: 10px
+        font-size: 30px
