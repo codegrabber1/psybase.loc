@@ -36,9 +36,7 @@ jQuery(document).ready(function($){
 $('.signin').on('click', function(){
     $('.ui.modal')
         .modal({
-            onApprove: function(){
-
-            },
+            onApprove: function(){},
             //allowMultiple: true,
             blurring: true
         })
@@ -66,4 +64,14 @@ $(".ui.form").form({
   }
     });
 $(".ui.dropdown").dropdown();
+var owl = $(".owl-carousel");
+owl.owlCarousel({
+    navigation: false,
+    autoPlay: 5000,
+    stopOnHover: true,
+    singleItem: true,
+    slideSpeed: 300,
+    items: 1,
+    pagination: true
+});
 });// end ready

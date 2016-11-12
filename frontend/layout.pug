@@ -11,9 +11,11 @@ html(lang="en")
     meta(name="description" content="")
     meta(name="keywords" content="")
     meta(name="copyright" content="The base of psychologists and centers.codegrabber")
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
-    <!-- endbower -->
+    //<!-- bower:css
+    //<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    //<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    //endbower
+    link(rel="stylesheet" href="bower_components/normalize-css/normalize.css")
     link(href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400" rel="stylesheet")
     link(rel="stylesheet", href="styles/font-awesome.min.css")
     link(rel="stylesheet", href="style.css")
@@ -29,7 +31,8 @@ html(lang="en")
     include includes/_footer
     <!-- scripts -->
     <!--bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    script(src="bower_components/jquery/dist/jquery.js")
+    script(src="bower_components/owl.carousel/dist/owl.carousel.js")
     <!--endbower-->
     <!--[if lt IE 9]>
     script(src="libs/html5shiv/html5shiv")

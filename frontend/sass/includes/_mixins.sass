@@ -1,0 +1,57 @@
+@function calcRem($size)
+  $remSize: $size/16px
+  @return $remSize * 1rem
+@mixin display($display)
+  display: $display
+@mixin border-radius($radius)
+  border-radius: $radius
+@mixin b_shadow($shadows...)
+  -webkit-box-shadow: $shadows
+  -moz-box-shadow: $shadows
+  box-shadow: $shadows
+@mixin carousel_card($color)
+  background: $color
+  position: relative
+  max-width: 100%
+  border: 0
+  padding: 0
+  flex-direction: column
+  min-height: 0
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  @include display(flex)
+  @include border-radius(calcRem(3px))
+  @include b_shadow(0 1px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5)
+@mixin c_carousel
+  @include carousel_card(#fff)
+  .panel
+    width: 100%
+    .card_content
+      //margin-bottom: 20px
+    .image
+      //margin: 0 auto
+      max-width: 200px
+      overflow: hidden
+      padding: 15px
+    .slide_description
+      margin-bottom: 20px
+      h2
+        margin: calcRem(8px)
+      p
+        line-height: 20px
+        //padding: 0 15px
+    .card_footer
+      width: 100%
+      padding: 6px 15px
+      border-top: 1px solid rgba(0, 0, 0, 0.05) !important
+      background: #fafafa linear-gradient(transparent, rgba(0, 0, 0, 0.05))
+      a
+        +display(block)
+        text-align: center
+        &.viewall
+          float: left
+        &.viewone
+          float: right
+
+

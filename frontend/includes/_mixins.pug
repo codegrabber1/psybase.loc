@@ -20,7 +20,7 @@ mixin menu(items)
 // lang
 mixin lang
     .ui.floating.dropdown.labeled.icon
-        i(class="fa fa-language", aria-hidden="true")
+        //i(class="fa fa-language", aria-hidden="true")
         span.text
             | Select Language
         .menu
@@ -35,6 +35,7 @@ mixin lang
             .item
                 | Polish
             .item
+                a(class="Ukraine flag")
                 | Ukraine
 
 // register block
@@ -109,9 +110,53 @@ mixin res_post(text,span)
             span.
                 #{span}
 // carousel
-mixin carouselPanel(name, imgUrl)
+mixin image(src,alt)
+    img(src=src,alt=alt)
+mixin carouselPanel(name,imageName)
     .panel
-        .image
-            img(src="#{imgUrl}")
-        h2= name
-
+        .card_content.clearfix
+            .row
+                .col-xs-12.col-sm-12.col-md-4
+                    .image
+                        +image('images/'+imageName+'.png','portrait')
+                .col-xs-12.col-sm-12.col-md-8
+                    .slide_description.clearfix
+                        h2= name
+                        p
+                            strong Education:
+                            | psychologists or psychotherapist
+                        p
+                            strong I use a number of evidence based therapies to help you gain control to create a more balanced and fullfilled life.
+                        ul
+                             li These include:
+                             li - children
+                             li - young people
+                             li - wrong relationship
+                             li - ...
+        .card_footer.clearfix
+            a(href="#" class="viewall") View all psychologists from the city(25)
+            a(href="#" class="viewone") Meet the psychologists
+mixin centerPanel(name,imageName)
+ .panel
+    .card_content.clearfix
+      .row
+        .col-xs-12.col-sm-12.col-md-4
+         .image
+           +image('images/'+imageName+'.png','portrait')
+        .col-xs-12.col-sm-12.col-md-8
+         .slide_description.clearfix
+            h2= name
+            p
+              strong Education:
+              | psychologists or psychotherapist
+            p
+              strong I use a number of evidence based therapies to help you gain control to create a more balanced and fullfilled life.
+            ul
+             li These include:
+             li - children
+             li - young people
+             li - wrong relationship
+             li - ...
+    .card_footer.clearfix
+      a(href="#" class="viewall") View all centers from the city(25)
+      a(href="#" class="viewone") View the center
