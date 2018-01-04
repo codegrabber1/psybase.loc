@@ -1,54 +1,72 @@
-//menu
--var menuItem = ["Бібліотека", "Psychological centers", "Practice Psychologist", "Blog"]
+//menu - https://toster.ru/q/303584
+-var menuItem = ["Library", "Psychological centers", "Practice Psychologist", "Blog"]
 -var menuSubItem = ["Item1", "Item2", "Item3"]
 -var menuSubItem2 = ["Item1", "Item2", "Item3"]
 mixin menu(items)
   ul.sf-menu
     each item in menuItem
-      if item == menuItem[2]
-        li: a(href="#") #{item}
+      if item == menuItem[1]
+        li
+          a(href=item+".html") #{item}
           ul
             each item in menuSubItem
               li: a(href="#") #{item}
-      else if item == menuItem[3]
-        li: a(href="#") #{item}
+      else if item == menuItem[2]
+        li
+          a(href=item+".html") #{item}
           ul
             each item in menuSubItem
               li: a(href="#") #{item}
       else
-        li: a(href="#") #{item}
+        li: a(href=item+".html") #{item}
 // lang
 mixin lang
-    .ui.floating.dropdown.labeled.icon
-        //i(class="fa fa-language", aria-hidden="true")
-        span.text
-            | Select Language
-        .menu
-            .item
-                | English
-            .item
-                | French
-            .item
-                | German
-            .item
-                | Hungarian
-            .item
-                | Polish
-            .item
-                a(class="Ukraine flag")
-                | Ukraine
-
+  .ui.floating.dropdown.labeled.icon
+    //i(class="fa fa-language", aria-hidden="true")
+    span.text
+      i.world.icon
+      | Language
+    .menu
+      .item
+        i.gb.flag
+        | English
+      .item
+        i.fr.flag
+        | French
+      .item
+        i.de.flag
+        | German
+      .item
+        i.hu.flag
+        | Hungarian
+      .item
+        i.pl.flag
+        | Polish
+      .item
+        i.ua.flag
+        | Ukraine
+// breadcrumbs
+mixin  breadcrumb
+  .ui.breadcrumb
+    .section
+      a(href="index.html") home
+    span.divider /
+    .section
+      a(href="#") home
+    span.divider /
+    .active.section
+      a(href="#") home
 // register block
 mixin top_menu()
   ul
     li
-      a(href="#")
+      a(href="./")
         i(class="fa fa-home" aria-hidden="true")
-        |Головна
+        | Головна
     li
-      a(href="#")
+      a(href="contact.html")
         i(class="fa fa-envelope" aria-hidden="true")
-        |Contacts
+        | Contact
     li
       +lang
 // register block
@@ -56,107 +74,185 @@ mixin regist_user()
   ul
     li
       a(href="#" class="signin")
-       i(class="fa fa-user" aria-hidden="true")
-       |Sign In
+        i(class="fa fa-user" aria-hidden="true")
+        | Sign In
       .ui.small.modal
-          i(class="close inverted icon")
-          .header
-              | Wellcome, Guest!
-          .content
-              form(method="post" class="ui form")
-                .field
-                  .ui.left.icon.input
-                    input(type="text" name="name" placeholder="Your name")
-                    i(class="user icon")
-                .field
-                  .ui.left.icon.input
-                    input(type="password" name="pass" placeholder="Your pass")
-                    i(class="lock icon")
-                .inline.field.error
-                .ui.toggle.checkbox
-                  input(tabindex="0" class="hidden" type="checkbox")
-                  label
-                    | Remember me
-              .ui.horizontal.divider
-                  | Enter via social
-              .ui.facebook.button
-                  i(class="facebook icon")
-                  | facebook
-              .ui.twitter.button
-                  i(class="twitter icon")
-                  | twitter
-              .ui.google.plus.button
-                  i(class="google plus icon")
-                  | google plus
-              .ui.linkedin.button
-                  i(class="linkedin icon")
-                  | linkedin
-          .actions
-              .ui.cancel.button.
-                  Cancel
-              input(type="submit" class="ui primary submit button" value="Sign In")
+        i(class="close inverted icon")
+        .header
+          | Wellcome, Guest!
+        .content
+          form(method="post" class="ui form")
+            .field
+              .ui.left.icon.input
+                input(type="text" name="name" placeholder="Your name")
+                i(class="user icon")
+            .field
+              .ui.left.icon.input
+                input(type="password" name="pass" placeholder="Your pass")
+                i(class="lock icon")
+            .inline.field.error
+            .ui.toggle.checkbox
+              input(tabindex="0" class="hidden" type="checkbox")
+              label
+                | Remember me
+          .ui.horizontal.divider
+            | Enter via social
+          .ui.facebook.button
+            i(class="facebook icon")
+            | facebook
+          .ui.twitter.button
+            i(class="twitter icon")
+            | twitter
+          .ui.google.plus.button
+            i(class="google plus icon")
+            | google plus
+          .ui.linkedin.button
+            i(class="linkedin icon")
+            | linkedin
+        .actions
+          .ui.cancel.button.
+            Cancel
+          input(type="submit" class="ui primary submit button" value="Sign In")
 
     li
       a(href="#" class="signup")
         i(class="fa fa-users" aria-hidden="true")
-        |Register your center
+        | Register your center
 // card info
 mixin res_post(text,span)
-    li
-        a(href="#")
-            img(src="", alt="")
-        a(href="#")
-            | #{text}
-            span.
-                #{span}
+  li
+    a(href="#")
+      img(src="", alt="")
+    a(href="#")
+      | #{text}
+      span.
+        #{span}
 // carousel
 mixin image(src,alt)
-    img(src=src,alt=alt)
+  img(src=src,alt=alt)
 mixin carouselPanel(name,imageName)
-    .panel
-        .card_content.clearfix
-            .row
-                .col-xs-12.col-sm-12.col-md-4
-                    .image
-                        +image('images/'+imageName+'.png','portrait')
-                .col-xs-12.col-sm-12.col-md-8
-                    .slide_description.clearfix
-                        h2= name
-                        p
-                            strong Education:
-                            | psychologists or psychotherapist
-                        p
-                            strong I use a number of evidence based therapies to help you gain control to create a more balanced and fullfilled life.
-                        ul
-                             li These include:
-                             li - children
-                             li - young people
-                             li - wrong relationship
-                             li - ...
-        .card_footer.clearfix
-            a(href="#" class="viewall") View all psychologists from the city(25)
-            a(href="#" class="viewone") Meet the psychologists
-mixin centerPanel(name,imageName)
- .panel
+  .panel
     .card_content.clearfix
-      .row
-        .col-xs-12.col-sm-12.col-md-4
-         .image
-           +image('images/'+imageName+'.png','portrait')
-        .col-xs-12.col-sm-12.col-md-8
-         .slide_description.clearfix
-            h2= name
+      .col-xs-12.col-sm-12.col-md-4
+        +image('images/' + imageName + '.png','portrait')
+          //- .ui.top.right.attached.red.label.
+          //-   The name of city
+      .col-xs-12.col-sm-12.col-md-8
+        .slide_description.clearfix
+          h2= name
+          p
+            strong Education:
+            | psychologists or psychotherapist
+          p
+            strong I use a number of evidence based therapies to help you gain control to create a more balanced and fullfilled life.
+          strong.
+            These include:
+          ul
+            li - children
+            li - young people
+            li - wrong relationship
+            li - children
+            li - young people
+            li - wrong relationship
+            li - children
+            li - ...
+      .col-xs-12.card_footer.clearfix
+        a(href="#" class="viewall") View all centers from the city(25)
+        a(href="#" class="viewone") View the center
+//mixin centerList
+mixin centerList(name,imageName)
+  .panel
+    ul
+      li
+        .card_content.clearfix
+          .col-xs-12.col-sm-12.col-md-3
+            +image('images/' + imageName + '.png','portrait')
+          .col-xs-12.col-sm-12.col-md-9
+            .slide_description
+              h2= name
+              p.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit commodi, labore voluptate deserunt. Quidem ad, autem modi iusto tempora dolore consequuntur doloribus laborum sapiente natus voluptas eius eos magni, error.
+          .col-xs-12.card_footer.clearfix
+            a(href="#" class="viewall") View all centers from the city(25)
+            a(href="#" class="viewone") View the center
+      li
+        .card_content.clearfix
+          .col-xs-12.col-sm-12.col-md-3
+            +image('images/' + imageName + '.png','portrait')
+          .col-xs-12.col-sm-12.col-md-9
+            .slide_description
+              h2= name
+              p.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iusto veniam, sint perspiciatis esse quo expedita non voluptatum, doloremque laborum aperiam a nemo magnam consequuntur, labore cumque. Obcaecati corrupti, omnis?
+          .col-xs-12.card_footer.clearfix
+            a(href="#" class="viewall") View all centers from the city(25)
+            a(href="#" class="viewone") View the center
+
+// tabs mixins
+mixin eventsPanel()
+  .row
+    .col-xs-12.col-sm-6.col-md-6
+      .indexconfr
+        h2.
+          Nearest conference
+        ul
+          li
+            a(href="#").
+                Наукові тенденції сучасної науки
             p
-              strong Education:
-              | psychologists or psychotherapist
+              | Дедлайн:
+              span 20.10.2016
+              | Місто: Жмеринка
+              span UA
+          li
+            a(href="#").
+                Наукові тенденції сучасної науки
             p
-              strong I use a number of evidence based therapies to help you gain control to create a more balanced and fullfilled life.
-            ul
-             li These include:
-             li - children
-             li - young people
-             li - wrong relationship
-             li - ...
-    .card_footer.clearfix
-      a(href="#" class="viewall") View all centers from the city(25)
-      a(href="#" class="viewone") View the center
+              | Дедлайн:
+              span 20.10.2016
+              | Місто: Жмеринка
+              span UA
+          li
+            a(href="#").
+                Наукові тенденції сучасної науки
+            p
+              | Дедлайн:
+              span 20.10.2016
+              | Місто: Жмеринка
+              span UA
+          li
+            a(href="#").
+                Наукові тенденції сучасної науки
+            p
+              | Дедлайн:
+              span 20.10.2016
+              | Місто: Жмеринка
+              span UA
+          li
+            a(href="#").
+                Наукові тенденції сучасної науки
+            p
+              | Дедлайн:
+              span 20.10.2016
+              | Місто: Жмеринка
+              span UA
+    .col-xs-12.col-sm-6.col-md-6
+      .indexCalendar
+        h2.
+          Event Calendar
+// mixin breadcrumb
+mixin breadcrumb(one)
+  .ui.small.breadcrumb
+    a.section(href="./") Home
+    i.right.chevron.icon.divider
+    div.active.section(href="./")= one
+// mixin breadcrumbs
+mixin breadcrumbs(one,two,three)
+  .ui.large.breadcrumb
+    a.section(href="./") Home
+    i.right.chevron.icon.divider
+    a.active.section(href="./")= one
+    i.right.chevron.icon.divider
+    a.section(href="./")= two
+    i.right.chevron.icon.divider
+    div.section(href="./")= three

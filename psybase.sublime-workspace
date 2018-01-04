@@ -4,133 +4,97 @@
 		"selected_items":
 		[
 			[
-				"tr",
-				"trf	transform"
+				"bread",
+				"breadcrubms"
 			],
 			[
-				"on",
-				"onError"
+				"mixi",
+				"mixin"
 			],
 			[
-				"con",
-				"concat"
-			],
-			[
-				"font",
-				"font-size"
+				"get",
+				"getdate"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "frontend/includes/_menu.pug",
+			"file": "frontend/index.pug",
 			"settings":
 			{
-				"buffer_size": 198,
+				"buffer_size": 1050,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "frontend/includes/_mixins.pug",
+			"file": "frontend/sass/includes/_index.sass",
 			"settings":
 			{
-				"buffer_size": 1192,
+				"buffer_size": 878,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "frontend/includes/_header.pug",
+			"file": "frontend/sass/includes/_contact.sass",
 			"settings":
 			{
-				"buffer_size": 566,
+				"buffer_size": 139,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "frontend/includes/_head.pug",
+			"file": "frontend/sass/includes/_mixins.sass",
 			"settings":
 			{
-				"buffer_size": 840,
+				"buffer_size": 1370,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "frontend/sass/main.sass",
+			"file": "frontend/contact.pug",
 			"settings":
 			{
-				"buffer_size": 384,
+				"buffer_size": 1309,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "frontend/sass/includes/_header.sass",
-			"settings":
-			{
-				"buffer_size": 1227,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "frontend/index.html",
-			"settings":
-			{
-				"buffer_size": 5447,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "frontend/sass/_settings.sass",
 			"settings":
 			{
-				"buffer_size": 2363,
+				"buffer_size": 3461,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
+	"build_system": "",
 	"command_palette":
 	{
 		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
 				"ip",
 				"Package Control: Install Package"
 			],
 			[
-				"lp",
-				"Package Control: List Packages"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
-			],
-			[
-				"ter",
-				"Terminal: Open in project folder"
-			],
-			[
 				"",
-				"Autoprefix CSS"
-			],
-			[
-				"IP",
 				"Package Control: Install Package"
-			],
-			[
-				"i",
-				"Git: Init"
 			]
 		],
-		"width": 390.0
+		"width": 386.0
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
-			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
 	},
 	"distraction_free":
@@ -144,73 +108,43 @@
 	},
 	"expanded_folders":
 	[
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes"
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes"
 	],
 	"file_history":
 	[
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_topmenu.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/main.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/gulpfile.js",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_footer.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js/common.js",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_mixins.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_header.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_media.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/bower.json",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/index.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_footer.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/package.json",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_head.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/index.pug",
-		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/SideBarGit/SideBarGit.sublime-settings",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_header.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/contact.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_aside.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/contact.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/libs/bootstrap/bootstrap.min.css",
-		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/User/Autoprefixer.sublime-settings",
-		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/Autoprefixer.sublime-settings",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_sidebar.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_settings.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/index.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/layout.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_footer.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_header.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_sidebar.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_head.html",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/layout.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_mixins.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_footer.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/main.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/gulpfile.js",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js/all.js",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_sidebar.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_settings.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_footer.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_aside.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_header.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_header.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_mainmenu.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/contact.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/blog.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/includes/_index.sass",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_head.pug",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js/common.js",
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/includes/_menu.pug",
+		"/D/YandexDisk/YandexDisk/Уроки/wfms/Yii2/Yii2.rant/videokurs/part2/wwwyii2-3/yii2_loc.sql",
 		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/codegrabber/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/layout.pug",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_pagination.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/sass/_aside.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/style.css",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/js",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/.bowerrc",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/inde.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.loc/.gitignore",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/package.json",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/bower.json",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/header.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/settings.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/aside.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/style.css",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/npm-debug.log",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/gulpfile.js",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/regist.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/media.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/footer.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/widget.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/sass/fonts.sass",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/libr.html",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/frontend/styles/style.css",
-		"/E/YandexDisk/YandexDisk/Server/domains/psybase.local/node_modules/wiredep/node_modules/lodash/isPlainObject.js",
-		"/E/YandexDisk/YandexDisk/Server/domains/newsrepo.loc/gulpfile.js"
+		"/D/YandexDisk/YandexDisk/Server/domains/psybase.loc/frontend/index.html",
+		"/D/YandexDisk/YandexDisk/Server/domains/php.loc/text.txt",
+		"/D/YandexDisk/YandexDisk/Server/domains/LawA.loc/app/layout.pug"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -224,17 +158,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"ticker-section",
-			"tabs_size",
-			"body",
-			"html,body",
-			"html,\nbody",
-			"html",
-			"body",
-			"html",
-			"body",
-			"html",
-			"body"
+			"simplyscroll",
+			"flexslider",
+			"widget_footer",
+			".contact_form",
+			"\n@",
+			"      .",
+			"attached",
+			"lorem*2",
+			"section",
+			"a",
+			"i.right.chevron.icon.divider\n    a.section(href=\"./\")= two"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -257,36 +191,93 @@
 			[
 				{
 					"buffer": 0,
-					"file": "frontend/includes/_menu.pug",
+					"file": "frontend/index.pug",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 198,
+						"buffer_size": 1050,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								0
+								446,
+								446
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
+							"colorcode": true,
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Pug/Syntaxes/PyPug.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "frontend/sass/includes/_index.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 878,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
+							"colorcode": true,
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "frontend/sass/includes/_contact.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
+							"colorcode": true,
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
@@ -297,287 +288,108 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "frontend/includes/_mixins.pug",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1192,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
-							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 342.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "frontend/includes/_header.pug",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 566,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
-							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "frontend/includes/_head.pug",
+					"file": "frontend/sass/includes/_mixins.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 840,
+						"buffer_size": 1370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								760,
+								760
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
+							"colorcode": true,
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "frontend/contact.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588,
+								588
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
+							"colorcode": true,
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 260.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "frontend/sass/main.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 384,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
 					"buffer": 5,
-					"file": "frontend/sass/includes/_header.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1227,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 57.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "frontend/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5447,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1007.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "frontend/sass/_settings.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2363,
+						"buffer_size": 3461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1339,
+								1339
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
+							"colorcode": true,
+							"git_gutter_enabled": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.y": 1360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -589,7 +401,7 @@
 	},
 	"input":
 	{
-		"height": 36.0
+		"height": 37.0
 	},
 	"layout":
 	{
@@ -602,28 +414,28 @@
 				1
 			],
 			[
+				1,
 				0,
-				1,
-				1,
-				2
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.582784309804,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.5,
 			1.0
 		]
 	},
 	"menu_visible": true,
-	"output.CSS Extended Completions":
+	"output.exec":
 	{
-		"height": 0.0
+		"height": 132.0
 	},
 	"output.find_results":
 	{
@@ -640,10 +452,6 @@
 		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"ip",
-				"node_modules\\wiredep\\node_modules\\lodash\\isPlainObject.js"
-			]
 		],
 		"width": 0.0
 	},
@@ -663,15 +471,15 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 287.0,
+	"side_bar_visible": false,
+	"side_bar_width": 271.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

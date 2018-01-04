@@ -1,31 +1,32 @@
 extends layout
 block content
-  .col-xs-12.col-sm-6.col-md-6
-    h2 Psychological centers
-    .carousel
-      .owl-carousel
-        +centerPanel("The name of psychological center1","centr")
-        +centerPanel("The name of psychological center2","centr")
-        //+centerPanel("The name of psychological center3","centr")
-        //+centerPanel("The name of psychological center4","centr")
-        //+centerPanel("The name of psychological center5","centr")
-  .col-xs-12.col-sm-6.col-md-6
-    h2 Psychologists
-    .carousel
-      .owl-carousel
-        +carouselPanel('The name of psychologist1', 'psport')
-        +carouselPanel('The name of psychologist2', 'psport1')
-        +carouselPanel('The name of psychologist3', 'psport2')
-        +carouselPanel('The name of psychologist4', 'psport3')
-        +carouselPanel('The name of psychologist5', 'psport4')
-        +carouselPanel('The name of psychologist6', 'psport')
-  .col-xs-12.col-sm-6.col-md-6
-    h2 New events for  scientists
-    .carousel
-      .owl-carousel
-        +carouselPanel("index сторінка", "psport")
-  .col-xs-12.col-sm-6.col-md-6
-    h2 Latest on the blog
-    .carousel
-      .owl-carousel
-        +carouselPanel("index сторінка", "psport")
+  section(class="clearfix")
+    .col-xs-12.col-sm-6.col-md-6
+      h2 Psychological centers
+      .centerList
+        +centerList("The title of the center",'psport4')
+        +centerList("The title of the center",'centr')
+        +centerList("The title of the center",'centr')
+        +centerList("The title of the center",'psport4')
+    .col-xs-12.col-sm-6.col-md-6
+      h2 Psychologists
+      .carousel
+        +carouselPanel("The name of psychologist",'psport')
+        +carouselPanel("The name of psychologist",'psport1')
+        +carouselPanel("The name of psychologist",'psport2')
+  section(class="clearfix")
+    .col-xs-12.col-sm-6.col-md-6
+      h2 New events for  scientists
+      .ui.top.attached.tabular.menu
+        a.item.active(data-tab="first").
+          Latest conference
+        a.item(data-tab="second").
+          Latest in the library
+      .ui.bottom.attached.tab.segment.active(data-tab="first")
+        +eventsPanel()
+      .ui.bottom.attached.tab.segment(data-tab="second").
+        SecondSecondSecondSecond
+    .col-xs-12.col-sm-6.col-md-6
+      h2 Latest on the blog
+      .tabs.carousel
+        | text

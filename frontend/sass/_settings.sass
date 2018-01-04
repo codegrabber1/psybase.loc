@@ -15,6 +15,7 @@ $foot_bg: #333
 $inver_col: #fff
 $f_bb: #FF0000
 $f_color: #ccc
+$breadcrubms_color: #F2F2F2
 // social bg color
 $facebook : #3D62B3
 $twitter  : #55ACEE
@@ -35,11 +36,15 @@ body
   width: 100%
 body
   background-color: $bg_col
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Roboto', sans-serif
 .wrapper
   height: auto
-  margin: 0
   padding: 0
+main
+  width: 100%
+section
+  margin: 10px 0
+  padding: 0 15px
 h1,
 h2,
 h3,
@@ -75,37 +80,69 @@ img
     float: right
     li
       display: inline-block
-input,
+input[type="text"],
+input[type="email"],
+input[type="file"],
 textarea
   border: none
-  margin: 0
+  border-bottom: 1px solid $yell_col
+  width: 100%
   padding: 10px
-  background-color: #fff
-.s_content
-  h2
-    text-align: center
+  margin: 8px 0
+  &:focus
+    border-bottom: 1px solid $blue_col
+.commentinput
+  margin: 10px 0
+  width: 100%
   input[type="text"],
   input[type="email"],
   input[type="file"],
   textarea
+    border: none
     border-bottom: 1px solid $yell_col
     width: 100%
-    display: block
+    padding: 10px
+    margin: 8px 0
     &:focus
       border-bottom: 1px solid $blue_col
-  input[type="submit"]
+input[type='submit']
+  border: none
+  padding: 10px
+  margin: 8px 0
+  float: right
+  &:hover
+    color: $bluehv_col
+    background-color: $yellhv_col
+    @include transition(all .3s ease-in-out)
+.breadcrubms
+  padding: 8px 15px
+  margin: 0 0 15px
+  background-color: $breadcrubms_color
+.s_content
+  h2
     text-align: center
-    display: block
-    width: 100%
-    margin: 10px 0
-    font-weight: bold
-    color: $blue_col
-    text-transform: uppercase
-    background-color: $yell_col
-    &:hover
-      color: $bluehv_col
-      background-color: $yellhv_col
-      @include transition(all .3s ease-in-out)
+  // input[type="text"],
+  // input[type="email"],
+  // input[type="file"],
+  // textarea
+  //   border-bottom: 1px solid $yell_col
+  //   width: 100%
+  //   display: block
+  //   &:focus
+  //     border-bottom: 1px solid $blue_col
+  // input[type="submit"]
+  //   text-align: center
+  //   display: block
+  //   width: 100%
+  //   margin: 10px 0
+  //   font-weight: bold
+  //   color: $blue_col
+  //   text-transform: uppercase
+  //   background-color: $yell_col
+  //   &:hover
+  //     color: $bluehv_col
+  //     background-color: $yellhv_col
+  //     @include transition(all .3s ease-in-out)
   .checkboxFive
     width: 25px
     margin: 20px 10px

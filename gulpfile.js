@@ -10,8 +10,17 @@ const concatcss = require('gulp-concat-css');
 const cached    = require('gulp-cached');
 const multipipe = require('multipipe');
 const notify    = require('gulp-notify');
-const autopref  = require('gulp-autoprefixer');
+// const autopref  = require('gulp-autoprefixer');
 
+function lazyRequireTask(taskName,path,options){
+	options = options || {};
+	options.taskName = taskName;
+	gulp.task(taskName, function(callback){
+		let task = require(path).call(this,options);
+
+		return task(callback);
+	});
+}
 
 // bower
 gulp.task('bower', function() {
@@ -19,7 +28,7 @@ gulp.task('bower', function() {
       .pipe(wiredep({
         directory : "frontend/bower_components"
       }))
-      .pipe(gulp.dest('frontend/'));
+      .pipe(gulp.dest('public'));
 });
 
 /*== server ==*/
@@ -30,17 +39,11 @@ gulp.task('server', function () {
   bs.watch('frontend/**/*.*').on('change', bs.reload);
 });
 
-/*== pug ==*/
-gulp.task('pug', function buildHTML(){
-  return multipipe(
-    gulp.src('frontend/*.pug'),
-    pug({
-      'pretty': true,
-      'compileDebug': true
-    }),
-    gulp.dest('frontend/')
-  ).on('error', notify.onError());
+/*=== jade(pug) ===*/
+lazyRequireTask('pug','./tmp/pug', {
+	src: 'app/**/*.pug'
 });
+
 
 /*== sass ==*/
 gulp.task('sass',function(){
@@ -48,10 +51,10 @@ gulp.task('sass',function(){
         gulp.src('frontend/sass/main.sass'),
         //cached('sass'),
         sass().on('error', sass.logError),
-        autopref({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }),
+        // autopref({
+        //     browsers: ['last 2 versions'],
+        //     cascade: false
+        // }),
         concatcss('style.css'),
         gulp.dest('frontend')
     ).on('error', notify.onError());
@@ -76,9 +79,9 @@ gulp.task('scripts', function(){
 
 /*== watch ==*/
 gulp.task('watch', function(){
-    gulp.watch('frontend/sass/**/*.sass',['sass']);
-    gulp.watch('frontend/js/*.js',['scripts']);
-    gulp.watch('frontend/**/*.pug', ['pug']);
+    gulp.watch('frontend/sass/**/*.sass', gulp.series('sass'));
+    //gulp.watch('frontend/js/*.js',['scripts']);
+    gulp.watch('frontend/**/*.pug', gulp.series('pug'));
 });
 /*== default ==*/
-gulp.task('default', ['watch', 'server']);
+gulp.task('default', gulp.parallel('watch', 'server'));

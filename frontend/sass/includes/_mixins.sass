@@ -22,29 +22,30 @@
   -ms-flex-direction: column
   @include display(flex)
   @include border-radius(calcRem(3px))
-  @include b_shadow(0 1px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5)
+  //@include b_shadow(0 0px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5)
 @mixin c_carousel
-  @include carousel_card(#fff)
   .panel
     width: 100%
     .card_content
-      //margin-bottom: 20px
-    .image
-      //margin: 0 auto
-      max-width: 200px
-      overflow: hidden
-      padding: 15px
-    .slide_description
-      margin-bottom: 20px
-      h2
-        margin: calcRem(8px)
-      p
-        line-height: 20px
-        //padding: 0 15px
+      margin: 5px 3px 10px
+      //@include carousel_card(#fff)
+      @include b_shadow(0 0px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5)
+      img
+        margin: 20px auto
+      .slide_description
+        margin: 0
+        padding: 0
+        h2
+          margin: calcRem(8px)
+        p
+          line-height: 20px
+          //padding: 0 15px
     .card_footer
+      position: relative
+      bottom: 0
       width: 100%
       padding: 6px 15px
-      border-top: 1px solid rgba(0, 0, 0, 0.05) !important
+      border: 1px solid rgba(0, 0, 0, 0.05) !important
       background: #fafafa linear-gradient(transparent, rgba(0, 0, 0, 0.05))
       a
         +display(block)

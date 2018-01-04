@@ -1,9 +1,10 @@
+"use strict";
 jQuery(document).ready(function($){
 // svg fallback (для старих браузерів, які не читають svg. Мають бути png-копії svg файлів у тій же директорії)
 // if(!Modernizr.svg){
 //   $("img[src*='svg']").attr("src", function(){
 //     return $(this).attr("src").replace(".svg",".png");
-//     });
+//     });k
 // }
 
 // top menu
@@ -19,7 +20,6 @@ jQuery(document).ready(function($){
       title: "Psybase"
     }
   });
-
   var api = $("#my-menu").data("mmenu");
   api.bind("closed", function(){
     $(".toggle-mnu").removeClass("on");
@@ -32,7 +32,8 @@ jQuery(document).ready(function($){
    thiss.toggleClass("on");
    $(".main-mnu").slideToggle();
         return false;
-   });// end top menu
+   });
+// end top menu
 $('.signin').on('click', function(){
     $('.ui.modal')
         .modal({
@@ -43,6 +44,8 @@ $('.signin').on('click', function(){
         .modal('show');
 });
 $('.ui.checkbox').checkbox();
+// tabs
+$('.menu .item').tab();
 $(".ui.form").form({
   on:'blur',
   inline : true,
@@ -64,14 +67,29 @@ $(".ui.form").form({
   }
     });
 $(".ui.dropdown").dropdown();
-var owl = $(".owl-carousel");
+
+var owl = $(".centerList");
 owl.owlCarousel({
-    navigation: false,
-    autoPlay: 5000,
-    stopOnHover: true,
-    singleItem: true,
-    slideSpeed: 300,
+    nav: true,
+    navText: "",
+    slideSpeed: 2000,
     items: 1,
-    pagination: true
+    loop: true,
+    dots: true,
+    autoplay: false,
+    autoplayHoverPause: true,
+    autoHeight:true
+});
+
+$(".carousel").owlCarousel({
+    nav: true,
+    navText: "",
+    slideSpeed: 2000,
+    items: 1,
+    loop: true,
+    dots: true,
+    autoplay: false,
+    autoplayHoverPause: true,
+    autoHeight:true
 });
 });// end ready

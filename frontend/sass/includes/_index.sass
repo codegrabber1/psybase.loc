@@ -1,3 +1,47 @@
-.carousel
-  margin-bottom: 20px
+.carousel,
+.centerList
+  // margin-bottom: 20px
   @include c_carousel
+  .owl-controls
+    text-align: center
+    margin: 0
+  .owl-dots
+    display: inline-block
+    position: absolute
+    left: 50%
+    .owl-dot
+      display: inline-block
+      &.active
+        span
+          background-color: $blue_col
+      span
+        background-color: $f_color
+        width: 10px
+        height: 10px
+        display: block
+        border-radius: 30px
+        margin-right: 3px
+  .owl-nav
+    position: absolute
+    .owl-prev
+      left: 0
+    .owl-next
+
+.indexconfr,
+.indexCalendar
+  border: 0 solid red
+  h2
+    text-align: center
+.indexconfr
+  li
+    margin: 8px 10px
+    a
+      // font-size: em(16px)
+    p
+      font-family: 'MyriadProCondR', sans-serif
+      font-size: em(18px)
+      margin: 0
+      span
+        color: red
+        font-weight: bold
+        margin: 0 em(5px)

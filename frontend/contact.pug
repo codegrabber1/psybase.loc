@@ -1,0 +1,39 @@
+extends layout
+block content
+  .container
+    .row
+      .col-xs-12
+        .breadcrubms
+          +breadcrumb("contact")
+      .col-xs-12.col-sm-8.col-md-8
+        .contact_charts.clearfix
+          .col-xs-12.col-sm-4.col-md-4.chart1
+            p.
+              We have 305 alredy registered centers
+          .col-xs-12.col-sm-4.col-md-4.chart2
+            p.
+              We have 305 alredy registered psychologists
+          .col-xs-12.col-sm-4.col-md-4.chart3
+            p.
+              To contact us use the next contacts
+        .contact_form.clearfix
+            form(action="./", method="post")
+              .col-xs-12.col-sm-6.col-md-6
+                .ui.left.icon.input.commentinput
+                  input(type='text',name='', value='',placeholder='hello')
+                  i(class="user icon")
+                .ui.left.icon.input.commentinput
+                  input(type='email',name='', value='',placeholder='email')
+                  i(class="mail icon")
+                .ui.left.icon.input.commentinput
+                  input(type='text',name='', value='',placeholder='subject')
+                  i(class="marker icon")
+              .col-xs-12.col-sm-6.col-md-6
+                .ui.input
+                  textarea(rows="10",cols="20")
+              .col-xs-12
+                input(type='submit',name='',value='Send message')
+        .contact_charts.clearfix.
+            fb
+      .col-xs-12.col-sm-4.col-md-4
+      include includes/_sidebar

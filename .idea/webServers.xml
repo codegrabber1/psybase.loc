@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3686fd74-4386-4a4d-a4ad-c8b6a8acd6d0" name="cherkassy.today" url="http://cherka03.ftp.ukraine.com.ua">
+        <fileTransfer host="cherka03.ftp.ukraine.com.ua" port="21" password="dfc8df98dfffdfebdffbdfc9dfefdfe2" username="cherka03_ftp">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
